@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo基本使用, ezhx">
+    <meta name="keywords" content="vue-cli4, ezhx">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo基本使用 | ezhx</title>
+    <title>vue-cli4 | ezhx</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/blog/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/blog/libs/awesome/css/all.css">
@@ -266,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/blog/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/blog/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo基本使用</h1>
+                    <h1 class="description center-align post-title">vue-cli4</h1>
                 </div>
             </div>
         </div>
@@ -387,8 +387,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/blog/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/blog/tags/vue-cli4/">
+                                <span class="chip bg-color">vue-cli4</span>
                             </a>
                         
                     </div>
@@ -399,8 +399,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/blog/categories/hexo/" class="post-category">
-                                hexo
+                            <a href="/blog/categories/vue/" class="post-category">
+                                vue
                             </a>
                         
                     </div>
@@ -412,7 +412,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-29
+                    2022-09-08
                 </div>
                 
 
@@ -421,14 +421,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    362
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -446,84 +446,128 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>npm install -g hexo-cli</td>
-<td>安装</td>
-</tr>
-<tr>
-<td>hexo init &lt;folder&gt;</td>
-<td>初始化</td>
-</tr>
-<tr>
-<td>hexo s</td>
-<td>启动</td>
-</tr>
-<tr>
-<td>hexo new [layout] &lt;title&gt;</td>
-<td>新建文件，<code>layout</code>默认使用 _config.yml 中的 default_layout 参数代替</td>
-</tr>
-<tr>
-<td>hexo clean</td>
-<td>清理打包文件</td>
-</tr>
-<tr>
-<td>hexo p</td>
-<td>发表草稿，即将文件从_draft转移到_post</td>
-</tr>
-<tr>
-<td>hexo g</td>
-<td>打包</td>
-</tr>
-<tr>
-<td>hexo d</td>
-<td>部署</td>
-</tr>
-</tbody></table>
-<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><pre class="line-numbers language-none"><code class="language-none">├── .deploy_git     
-├── node_modules
-├── public
-├── scaffolds       模板文件夹
-│   ├── draft.md    草稿模板
-│   ├── page.md     页面模板
-│   └── post.md     预发布文章模板
-├── source
-│   ├── _posts
-│   ├── _drafts
-├── themes          主题
-├── _config.yml     用来配置博客相关的参数
-├── db.json
-├── package.json
-└── package-lock.json<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">npm install <span class="token operator">-</span>g @vue<span class="token operator">/</span>cli
 
-<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><ul>
-<li>hexo：主程序</li>
-<li>hexo-deployer-git：实现 git 部署方式</li>
-<li>hexo-generator-archive：存档页面生成器</li>
-<li>hexo-generator-category：分类页面生成器</li>
-<li>hexo-generator-index：index 生成器</li>
-<li>hexo-generator-tag：标签页面生成器</li>
-<li>hexo-renderer-ejs：支持 EJS 渲染</li>
-<li>hexo-renderer-marked：Markdown 引擎</li>
-<li>hexo-renderer-stylus：支持 stylus 渲染</li>
-<li>hexo-server：支持本地预览，默认地址 localhost:4000</li>
-</ul>
-<h3 id="source-，-public-和-deploy-git"><a href="#source-，-public-和-deploy-git" class="headerlink" title="source ， public 和 .deploy_git"></a>source ， public 和 .deploy_git</h3><ul>
-<li>source：资源文件夹。用来存放图片、Markdown 文档（文章、草稿）、各种页面（分类、关于页面等）。</li>
-<li>public：将 source 文件夹里的 Markdown 文档，转换成 index.html。再结合主题进行渲染，就是我们最终看到的博客。</li>
-<li>.deploy_git：将 public 文件夹的内容提交到 Github 后生成，内容与 public 文件夹基本一致。</li>
-</ul>
-<p>这三者的关系大致是：source -&gt; public -&gt; .deploy_git</p>
+vue <span class="token operator">--</span>version
+<span class="token comment">// @vue/cli 4.5.13</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">vue create app
+
+vue ui<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="vue-cli-service"><a href="#vue-cli-service" class="headerlink" title="vue-cli-service"></a>vue-cli-service</h2><blockquote>
+<p>在一个 Vue CLI 项目中，@vue&#x2F;cli-service 安装了一个名为 vue-cli-service 的命令。</p>
+</blockquote>
 <ul>
-<li>执行hexo generate，根据 source，更新 public。</li>
-<li>执行hexo deploy，根据 public，更新 .deploy_git</li>
+<li><p><code>vue-cli-service serve</code>命令会启动一个开发服务器</p>
+<blockquote>
+<p>用法：vue-cli-service serve [options] [entry]<br>选项：<br>  --open    在服务器启动时打开浏览器<br>  --copy    在服务器启动时将 URL 复制到剪切版<br>  --mode    指定环境模式 (默认值：development)<br>  --host    指定 host (默认值：0.0.0.0)<br>  --port    指定 port (默认值：8080)<br>  --https   使用 https (默认值：false)</p>
+</blockquote>
+</li>
+<li><p><code>vue-cli-service build</code>会在 dist&#x2F; 目录产生一个可用于生产环境的包</p>
+<blockquote>
+<p>用法：vue-cli-service build [options] [entry|pattern]<br>选项：<br>--mode        指定环境模式 (默认值：production)<br>--dest        指定输出目录 (默认值：dist)<br>--modern      面向现代浏览器带自动回退地构建应用<br>--target      app | lib | wc | wc-async (默认值：app)<br>--name        库或 Web Components 模式下的名字 (默认值：package.json 中的 “name” 字段或入口文件名)<br>--no-clean    在构建项目之前不清除目标目录的内容<br>--report      生成 report.html 以帮助分析包内容<br>--report-json 生成 report.json 以帮助分析包内容<br>--watch       监听文件变化</p>
+</blockquote>
+</li>
+<li><p><code>vue-cli-service inspect</code>审查一个 Vue CLI 项目的 webpack config</p>
+<blockquote>
+<p>用法：vue-cli-service inspect [options] […paths]<br>选项：<br>--mode    指定环境模式 (默认值：development)</p>
+</blockquote>
+</li>
 </ul>
+<h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><h3 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h3><blockquote>
+<p>调整 webpack 配置最简单的方式就是在 vue.config.js 中的 configureWebpack 选项提供一个对象，该对象将会被 webpack-merge 合并入最终的 webpack 配置。</p>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><div class="caption"><span>vue.config.js</span></div><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token literal-property property">configureWebpack</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token keyword">new</span> <span class="token class-name">MyAwesomeWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>如果需要基于环境有条件地配置行为，或者想要直接修改配置，那就换成一个函数 (该函数会在环境变量被设置之后懒执行)。该方法的第一个参数会收到已经解析好的配置。在函数内，你可以直接修改配置，或者返回一个将会被合并的对象。</p>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><div class="caption"><span>vue.config.js</span></div><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function-variable function">configureWebpack</span><span class="token operator">:</span> <span class="token parameter">config</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// 为生产环境修改配置...</span>
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// 为开发环境修改配置...</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="vue-cli内部配置"><a href="#vue-cli内部配置" class="headerlink" title="vue-cli内部配置"></a>vue-cli内部配置</h3><blockquote>
+<p>Vue CLI 内部的 webpack 配置是通过 webpack-chain 维护的，可以定义具名的 loader 规则和具名插件，允许我们更细粒度的控制其内部配置。</p>
+</blockquote>
+<pre class="line-numbers language-javascript" data-language="javascript"><div class="caption"><span>vue.config.js</span></div><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// 修改loader</span>
+    <span class="token function-variable function">chainWebpack</span><span class="token operator">:</span> <span class="token parameter">config</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+        config<span class="token punctuation">.</span>module
+        <span class="token punctuation">.</span><span class="token function">rule</span><span class="token punctuation">(</span><span class="token string">'vue'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'vue-loader'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token parameter">options</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+            <span class="token comment">// 修改它的选项...</span>
+            <span class="token keyword">return</span> options
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+        <span class="token comment">// 你还可以再添加一个 loader</span>
+        <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'other-loader'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">loader</span><span class="token punctuation">(</span><span class="token string">'other-loader'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">const</span> svgRule <span class="token operator">=</span> config<span class="token punctuation">.</span>module<span class="token punctuation">.</span><span class="token function">rule</span><span class="token punctuation">(</span><span class="token string">'svg'</span><span class="token punctuation">)</span>
+        <span class="token comment">// 清除已有的所有 loader。</span>
+        <span class="token comment">// 如果你不这样做，接下来的 loader 会附加在该规则现有的 loader 之后。</span>
+        svgRule<span class="token punctuation">.</span>uses<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">// 添加要替换的 loader</span>
+        svgRule
+        <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'vue-svg-loader'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">loader</span><span class="token punctuation">(</span><span class="token string">'vue-svg-loader'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// 修改插件选项</span>
+        config
+        <span class="token punctuation">.</span><span class="token function">plugin</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token parameter">args</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token comment">/* 传递给 html-webpack-plugin's 构造函数的新参数 */</span><span class="token punctuation">]</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><blockquote>
+<p>在项目根目录中放置下列文件来指定环境变量：</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">.env                <span class="token comment"># 在所有的环境中被载入</span>
+.env.local          <span class="token comment"># 在所有的环境中被载入，但会被 git 忽略</span>
+.env.<span class="token punctuation">[</span>mode<span class="token punctuation">]</span>         <span class="token comment"># 只在指定的模式中被载入</span>
+.env.<span class="token punctuation">[</span>mode<span class="token punctuation">]</span>.local   <span class="token comment"># 只在指定的模式中被载入，但会被 git 忽略</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>一个环境文件只包含环境变量的“键&#x3D;值”对，只有 NODE_ENV，BASE_URL 和以 VUE_APP_ 开头的变量将通过 webpack.DefinePlugin 静态地嵌入到客户端侧的代码中。</p>
+<ul>
+<li>NODE_ENV - 会是 “development”、”production” 或 “test” 中的一个。具体的值取决于应用运行的模式。</li>
+<li>BASE_URL - 会和 vue.config.js 中的 publicPath 选项相符，即你的应用会部署到的基础路径。</li>
+<li>VUE_APP_ - 自定义的变量<pre class="line-numbers language-bash" data-language="bash"><div class="caption"><span>.env.development</span></div><code class="language-bash"><span class="token assign-left variable">FIRST</span><span class="token operator">=</span>h
+<span class="token assign-left variable">LAST</span><span class="token operator">=</span>x
+
+<span class="token assign-left variable">VUE_APP_USER</span><span class="token operator">=</span><span class="token variable">$FOO</span><span class="token variable">$BAR</span>
+<span class="token comment"># VUE_APP_USER=hx</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript" data-language="javascript"><div class="caption"><span>main.js</span></div><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">VUE_APP_USER</span><span class="token punctuation">)</span>
+<span class="token comment">// hx</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li>.env 环境文件是通过运行 vue-cli-service 命令载入的，因此环境文件发生变化，你需要重启服务。</li>
+</ul>
+<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><blockquote>
+<p>dist 目录需要启动一个 HTTP 服务器来访问 (除非你已经将 publicPath 配置为了一个相对的值)，所以以 file:&#x2F;&#x2F; 协议直接打开 dist&#x2F;index.html 是不会工作的。在本地预览生产环境构建最简单的方式就是使用一个 Node.js 静态文件服务器，例如 serve：</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> serve
+<span class="token comment"># -s 参数的意思是将其架设在 Single-Page Application 模式下</span>
+<span class="token comment"># 这个模式会处理即将提到的路由问题</span>
+serve <span class="token parameter variable">-s</span> dist<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>如果你在 history 模式下使用 Vue Router，是无法搭配简单的静态文件服务器的。为了解决这个问题，你需要配置生产环境服务器，将任何没有匹配到静态文件的请求回退到 index.html。<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">location / <span class="token punctuation">&#123;</span>
+  try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span>/ /index.html<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/">https://cli.vuejs.org/zh/guide/</a></p>
 
                 
             </div>
@@ -550,7 +594,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ezhx.github.io/blog/hexo/hexo/">https://ezhx.github.io/blog/hexo/hexo/</a>
+                    <a href="https://ezhx.github.io/blog/vue/vue-cli4/">https://ezhx.github.io/blog/vue/vue-cli4/</a>
                 </span>
             </div>
             <!-- <div class="reprint__notice">
@@ -588,8 +632,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/blog/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/blog/tags/vue-cli4/">
+                                    <span class="chip bg-color">vue-cli4</span>
                                 </a>
                             
                         </div>
@@ -633,17 +677,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/blog/others/markdown/">
+                <a href="/blog/vue/vue-cli4/">
                     <div class="card-image">
                         
                         
-                        <img src="/blog/medias/featureimages/14.jpg" class="responsive-img" alt="markdown基本使用">
+                        <img src="/blog/medias/featureimages/21.jpg" class="responsive-img" alt="vue-cli4">
                         
-                        <span class="card-title">markdown基本使用</span>
+                        <span class="card-title">vue-cli4</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -653,26 +698,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/blog/categories/others/" class="post-category">
-                                    others
+                            <a href="/blog/categories/vue/" class="post-category">
+                                    vue
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/blog/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
+                    <a href="/blog/tags/vue-cli4/">
+                        <span class="chip bg-color">vue-cli4</span>
                     </a>
                     
                 </div>
@@ -686,13 +732,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/blog/javascript/class-guan-jian-zi/">
+                <a href="/blog/vue/zi-ding-yi-zhi-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/blog/medias/featureimages/20.jpg" class="responsive-img" alt="class关键字">
+                        <img src="/blog/medias/featureimages/6.jpg" class="responsive-img" alt="自定义指令">
                         
-                        <span class="card-title">class关键字</span>
+                        <span class="card-title">自定义指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -703,14 +749,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/blog/categories/javascript/" class="post-category">
-                                    javascript
+                            <a href="/blog/categories/vue/" class="post-category">
+                                    vue
                                 </a>
                             
                             
@@ -720,8 +766,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/blog/tags/class%E5%85%B3%E9%94%AE%E5%AD%97/">
-                        <span class="chip bg-color">class关键字</span>
+                    <a href="/blog/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4/">
+                        <span class="chip bg-color">自定义指令</span>
+                    </a>
+                    
+                    <a href="/blog/tags/direction/">
+                        <span class="chip bg-color">direction</span>
                     </a>
                     
                 </div>
